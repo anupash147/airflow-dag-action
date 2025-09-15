@@ -34,6 +34,10 @@ inputs:
     description: 'Repo access token'
     required: true
 
+  githubWorkspace:
+    description: 'Path to the GitHub workspace directory.'
+    required: true
+
 outputs:
   validator-result:
     description: 'DAGs validator result'
@@ -50,3 +54,4 @@ runs:
     - ${{ inputs.pluginPaths }}
     - ${{ inputs.loadExamples }}
     - ${{ inputs.accessToken }}
+    - ${{ inputs.githubWorkspace }}

@@ -17,7 +17,8 @@ airflow variables import $3
 airflow connections import $4
 
 
-cp -r /action/* /github/workspace/
+cp -r /action/* /opt/
+
 
 export PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}${PWD}/$2"
 export AIRFLOW__CORE__PLUGINS_FOLDER="${PWD}/$5"
