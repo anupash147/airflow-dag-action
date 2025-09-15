@@ -18,7 +18,7 @@ airflow connections import $4
 
 
 cp -r /action/* /opt/
-
+cd /opt/
 
 export PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}${PWD}/$2"
 export AIRFLOW__CORE__PLUGINS_FOLDER="${PWD}/$5"
